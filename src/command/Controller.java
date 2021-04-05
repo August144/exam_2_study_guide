@@ -15,8 +15,8 @@ public class Controller {
   private final Map<String, Function<Scanner, ICommand>> knownCommands;
   private final Scanner scanner;
 
-  public Controller() {
-    this.scanner = new Scanner(System.in);
+  public Controller(Scanner scanner) {
+    this.scanner = scanner;
     knownCommands = new HashMap<>();
     knownCommands.put("commandA", s -> new CommandA());
     knownCommands.put("commandB", s -> new CommandB());

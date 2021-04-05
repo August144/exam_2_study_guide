@@ -1,5 +1,7 @@
 package strategy.strategies;
 
-public interface IStrategy {
+import strategy.IModel;
 
+public interface IStrategy {
+  int move(IModel model);
 }
